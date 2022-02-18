@@ -34,23 +34,23 @@ view = {
 				
 				span.textContent = model.items[i].text
 				
-				// Put a line through any items we've 'ticked' off
+				
 				if (model.items[i].completed) {
 					span.setAttribute("style", "text-decoration: line-through; color: #bbb")
 				}
 
 
-				// Add our icons
+				
 				iconCheck.setAttribute("class", "icon ion-md-checkmark")
 				iconCheck.setAttribute("data-id", i)
 				iconCross.setAttribute("class", "icon ion-md-trash")
 				iconCross.setAttribute("data-id", i)
 
-				// Add our onclick functions for complete/delete actions
+			
 				check.setAttribute("onclick", "controller.completeItem('" + i + "')")
 				cross.setAttribute("onclick", "controller.deleteItem('" + i + "')")
 
-				// Append all our elements and add to DOM
+			
 				check.appendChild(iconCheck)
 				cross.appendChild(iconCross)
 				item.appendChild(span)
