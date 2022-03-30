@@ -1,4 +1,13 @@
-import math
-a=int(input())
-b=int(input())
-print(math.pow(a*a+b*b,0.5))
+def  Xor( x, y):
+  if x==True and y==False:
+    return True;
+  elif x==False and y==True:
+      return True
+  else:
+    return False;
+
+a,b=map(int,input().split())
+if Xor(a,b)==True:
+  print(1)
+else:
+  print(0)
